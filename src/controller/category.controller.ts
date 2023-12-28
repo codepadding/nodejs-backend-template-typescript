@@ -1,11 +1,7 @@
 import { Request, Response } from "express";
-import CategoryModel, { CATEGORY_MODEL_NAME, CATEGORY_STATUS, Category } from "../models/category.model";
+import CategoryModel, { CATEGORY_MODEL_NAME, Category } from "../models/category.model";
 import { apiResponse } from "../utils/apiResponse";
-import {
-    Schema,
-} from "mongoose";
-const { ObjectId } = Schema.Types;
-// recursive 
+
 
 export const getAllCategory = async (req: Request, res: Response) => {
     const populateChildrenRecursive = async (category:Category) => {
