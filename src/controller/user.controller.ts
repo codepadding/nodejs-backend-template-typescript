@@ -9,7 +9,7 @@ import jwt from 'jsonwebtoken';
 import { log } from "console";
 const bcrypt = require('bcrypt');
 
-const STRIPE_SECRET_KEY = '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';
+const STRIPE_SECRET_KEY = '';
 const website = 'https://goldpriceupdate.com'
 
 
