@@ -1,10 +1,16 @@
-import express from 'express';
-import { getUserInformation,updateAuth, } from '../../controller/user.controller';
+import express, { Response } from 'express';
+import { apiResponse } from '../../utils/apiResponse';
+import { CustomRequest } from '../../interface/CustomRequest';
 
 const router = express.Router();
 
-router.get('/', getUserInformation)
-router.post('/',updateAuth)
+router.get('/', (req: CustomRequest, res: Response) => {
+    return apiResponse({
+        res,
+        message: "OK",
+    });
+});
+
 
 
 
