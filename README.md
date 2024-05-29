@@ -17,5 +17,7 @@ sudo docker ps
 sudo docker ps -a
 docker container ls -a
 
+# stop container 
+sudo docker container stop container_id
 
 V1.3
