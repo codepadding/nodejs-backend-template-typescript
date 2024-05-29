@@ -19,5 +19,7 @@ docker container ls -a
 
 # stop container 
 sudo docker container stop container_id
+## delete container
+docker container rm [container id]
 
 V1.3
